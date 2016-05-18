@@ -1,1 +1,3 @@
-openpyxl - Writing and Reading Excel Files
+openpyxl
+reportlab
+pypdf2

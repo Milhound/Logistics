@@ -20,7 +20,8 @@ def main():
     values = get_row_data(ws.rows[1])
     data = dict(zip(keys, values))
     
-    # Key values
+    # data['key']
+    # Key values:
     # Reference
     # AWB
     # Client
