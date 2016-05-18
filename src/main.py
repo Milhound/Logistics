@@ -1,4 +1,11 @@
 from openpyxl import load_workbook
+from PIL import Image, PdfImagePlugin
+
+try:
+    pdf = Image.open('resources/blank_airwaybill.jpg')
+except:
+    print("Could not locate AWB template")
+    raise
 
 # Load the test file
 wb = load_workbook('example/Example.xlsx')
@@ -52,5 +59,7 @@ def main():
     # Freight
     # Insurance
     # Date
+    
+    pdf.show()
 main()
     
